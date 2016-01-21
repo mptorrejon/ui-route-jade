@@ -1,0 +1,14 @@
+doctype html
+html
+	head
+		script(src="//ajax.googleapis.com/ajax/libs/angularjs/1.1.5/angular.min.js")
+		script(src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.8/angular-ui-router.min.js")
+		script(src="main.js")
+		block title
+			title Default layout
+	body(ng-app="app")
+		block content
+		h1 Layout Page
+		div(ui-sref="page1") Page1
+		div(ui-sref="page2") Page2
+		div(ui-view)
