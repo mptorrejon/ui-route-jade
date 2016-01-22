@@ -6,6 +6,7 @@ App.config(function($stateProvider, $urlRouterProvider){
 			templateUrl: 'views/first'
 		})
 		.state('page2', {
-			url: ''
+			url: '/page2',
+			templateUrl: 'views/second'
 		});
 });

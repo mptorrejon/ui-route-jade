@@ -4,11 +4,16 @@ html
 		script(src="//ajax.googleapis.com/ajax/libs/angularjs/1.1.5/angular.min.js")
 		script(src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.8/angular-ui-router.min.js")
 		script(src="main.js")
+		link(rel="stylesheet" type="text/css" href="style.css")
+		
 		block title
 			title Default layout
 	body(ng-app="app")
 		block content
 		h1 Layout Page
-		div(ui-sref="page1") Page1
-		div(ui-sref="page2") Page2
-		div(ui-view)
+		p This sample uses Agular ui-route and jade template engine. Click on any of the links and a view written with jade will display beneth the horizontal line(ui-view container).
+		p If you like this please follow and/or have better solution, please share.
+		.wrapper
+			div(ui-sref="page1" class='links') Page1
+			div(ui-sref="page2" class='links') Page2
+		div(ui-view class="uiContainer")
