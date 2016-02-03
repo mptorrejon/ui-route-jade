@@ -1,15 +1,17 @@
 html body .wrapper .links {
-  cursor: pointer;
-  display: inline-block;
-  margin-right: 10px;
-  border: 1px solid transparent;
-  padding: 3px 8px;
+	cursor: pointer;
+	display: inline-block;
+	margin-right: 10px;
+	color: #000;
+	border: 1px solid #000;
+	border-radius: 3px;	
+	padding: 3px 8px;
 }
 html body .wrapper .links:hover {
-  color: #008000;
-  border: 1px solid #008000;
-  border-radius: 3px;
+	color: #008000;
+	border: 1px solid #008000;
+	border-radius: 3px;
 }
 html body .uiContainer {
-  border-top: 1px solid #808080;
+  	border-top: 1px solid #808080;
 }
